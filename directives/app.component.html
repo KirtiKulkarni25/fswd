@@ -1,0 +1,14 @@
+<!-- conditional-rendering.component.html -->
+<div *ngIf="showElement">
+  <p>This paragraph is rendered conditionally using ngIf.</p>
+</div>
+
+<ul>
+  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>
+
+<div [ngSwitch]="condition">
+  <p *ngSwitchCase="'one'">This is case one.</p>
+  <p *ngSwitchCase="'two'">This is case two.</p>
+  <p *ngSwitchDefault>Default case.</p>
+</div>
